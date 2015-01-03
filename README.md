@@ -1,6 +1,8 @@
 # Cordova 3.x Contact Picker Plugin #
 This plugin brings up a native iOS or Android contact-picker overlay, accessing the addressbook and returning the selected contact's name, email and phone number. (NOTE: currently, only the email is retrieved.)
 
+Does not require the READ_CONTACTS permission.
+
 ## Usage
 
 Example Usage
