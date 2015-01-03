@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0" id="com.flyingsoftgames.contactpickerplugin" version="0.4">
+ <name>Contact Picker Plugin</name>
+ <description>A native contact-picker overlay that accesses the address book.</description>
+ <license>MIT License</license>
+ <keywords>cordova, address, addressbook, address book, contacts, contact, contact picker, contact picker</keywords>
+ <js-module src="www/contactpickerplugin.js" name="ContactPickerPlugin"><clobbers target="window.plugins.ContactPickerPlugin" /></js-module>
+ 
+ <!-- android -->
+ <platform name="android">
+  <config-file target="res/xml/config.xml" parent="/*">
+   <feature name="ContactPickerPlugin">
+    <param name="android-package" value="com.flyingsoftgames.contactpickerplugin.ContactPickerPlugin"/>
+   </feature>
+  </config-file>
+  <source-file src="src/android/ContactPickerPlugin.java" target-dir="src/com/flyingsoftgames/contactpickerplugin" />
+ </platform>
+ 
+ <!-- ios -->
+ <platform name="ios">
+  <config-file target="config.xml" parent="/*">
+   <feature name="ContactPicker">
+    <param name="ios-package" value="ContactPicker"/>
+   </feature>
+  </config-file>
+  <header-file src="src/ios/ContactPickerPlugin.h" />
+  <source-file src="src/ios/ContactPickerPlugin.m" />
+  <framework src="AddressBook.framework" />
+  <framework src="AddressBookUI.framework" />
+ </platform>
+</plugin>
