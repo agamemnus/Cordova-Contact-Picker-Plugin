@@ -3,7 +3,18 @@ This plugin brings up a native iOS or Android contact-picker overlay, accessing 
 
 Does not require the READ_CONTACTS permission.
 
-## Usage
+
+Donations
+----------
+Please help feed Tiny Tim!
+
+Gratipay / Gittip: https://gratipay.com/agamemnus/
+
+Paypal: agamemnus at flyingsoftgames dot com
+
+
+Usage
+------
 
 Example Usage
 
@@ -28,11 +39,15 @@ The method which will return a JSON. Example:
 }
 ````
 
-## Requirements
+
+Requirements
+-------------
 
 This works with Cordova 3.0+ and has been successfully tested for (3.6.3).
 
-## Installation Instructions
+
+Installation Instructions
+--------------------------
 
 The ContactPicker plugin provides support for Cordova's command-line tooling.
 Simply navigate to your project's root directory and execute the following command:
@@ -40,7 +55,10 @@ Simply navigate to your project's root directory and execute the following comma
 ````
 cordova plugin add https://github.com/agamemnus/ContactPickerPlugin.git
 ````
-## MIT License (Android)
+
+
+MIT License (Android)
+----------------------
 
 Copyright 2015 Michael Romanovsky
 
@@ -63,7 +81,9 @@ LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION
 OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION
 WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
-## MIT License (iOS portion)
+
+MIT License (iOS portion)
+--------------------------
 
 Copyright 2013 Monday Consulting GmbH
 
